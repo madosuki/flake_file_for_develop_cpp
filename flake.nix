@@ -30,8 +30,8 @@
               gnumake
               # llvm.libcxx
               # llvm.libcxx.dev
-              # llvm.clang
-              # llvm.lldb
+              llvm.clang
+              llvm.lldb
               # llvm.libllvm
               clang-tools
               gdb
