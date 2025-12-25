@@ -28,21 +28,19 @@
               automake
               autoconf
               gnumake
-              # llvm.libcxx
-              # llvm.libcxx.dev
               llvm.clang
               llvm.lldb
-              # llvm.libllvm
+              llvm.libllvm
+              llvm.libcxx
               clang-tools
               gdb
               mold
               cmake
               stdenv.cc.cc.lib
-              # stdenv.cc.libc.dev
               bear
             ];
             CLANGD_FLAGS = [
-              "--query-driver=${llvm.clang}/bin/clang++"
+              "--query-driver=${llvm.clang}/bin/clang,${llvm.clang}/bin/clang++"
             ];
             # NIX_CFLAGS_COMPILE = [
             #   # "-isystem ${gcc}/include/c++/${gcc.version}"
