@@ -46,9 +46,9 @@
             #   # "-isystem ${gcc}/include/c++/${gcc.version}"
             #   # "-isystem ${llvm.libcxx.dev}/include/c++/v1"
             # ];
-            shellHook = ''
-            exec zsh
-            '';
+            # shellHook = ''
+            # exec zsh
+            # '';
           };
         }
     );
